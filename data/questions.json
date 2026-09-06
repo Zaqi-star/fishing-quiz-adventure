@@ -1,55 +1,222 @@
 [
   {
-    "name": "fufu",
-    "kelas": "12c",
-    "score": 680,
-    "catches": 6,
-    "baitLeft": 8,
-    "target": 500,
-    "questions": [
-      {
-        "question": "Benua terbesar di dunia adalah?",
-        "selected": "Asia",
-        "correct": "Asia",
-        "explanation": "Asia adalah benua terluas di dunia.",
-        "result": "benar"
-      },
-      {
-        "question": "Benda yang dapat menyerap panas matahari paling besar adalah?",
-        "selected": "Air",
-        "correct": "Air",
-        "explanation": "Air memiliki kapasitas panas yang tinggi, jadi ia menyerap dan menyimpan panas dengan baik.",
-        "result": "benar"
-      },
-      {
-        "question": "Benda yang dapat menyerap panas matahari paling besar adalah?",
-        "selected": "Air",
-        "correct": "Air",
-        "explanation": "Air memiliki kapasitas panas yang tinggi, jadi ia menyerap dan menyimpan panas dengan baik.",
-        "result": "benar"
-      },
-      {
-        "question": "Satuan luas yang benar dalam SI adalah?",
-        "selected": "Meter persegi",
-        "correct": "Meter persegi",
-        "explanation": "Satuan luas dalam SI adalah meter persegi (m²).",
-        "result": "benar"
-      },
-      {
-        "question": "Benda yang dapat menyerap panas matahari paling besar adalah?",
-        "selected": "Air",
-        "correct": "Air",
-        "explanation": "Air memiliki kapasitas panas yang tinggi, jadi ia menyerap dan menyimpan panas dengan baik.",
-        "result": "benar"
-      },
-      {
-        "question": "Benua terbesar di dunia adalah?",
-        "selected": "Asia",
-        "correct": "Asia",
-        "explanation": "Asia adalah benua terluas di dunia.",
-        "result": "benar"
-      }
+    "question": "1. Tokoh pemimpin pasukan Tentara Keamanan Rakyat (TKR) yang gugur di awal Pertempuran Ambarawa adalah...",
+    "options": [
+      "Jenderal Sudirman",
+      "Letkol Isdiman",
+      "Bung Tomo",
+      "Jenderal A.H. Nasution"
     ],
-    "createdAt": "2026-09-04T04:07:29.851Z"
+    "answer": 1,
+    "explanation": "Jawaban yang benar adalah Letkol Isdiman. Ia gugur di awal pertempuran dan menjadi simbol keberanian pasukan TKR di Ambarawa.",
+    "rarity": "umum"
+  },
+  {
+    "question": "2. Setelah gugurnya pimpinan sebelumnya, komando pasukan TKR di Ambarawa langsung diambil alih oleh...",
+    "options": [
+      "Jenderal Oerip Soemohardjo",
+      "Letjen MT Haryono",
+      "Kolonel Sudirman",
+      "Mayor Ahmad Tahir"
+    ],
+    "answer": 2,
+    "explanation": "Jawaban yang benar adalah Kolonel Sudirman. Setelah Letkol Isdiman gugur, kolonel ini memimpin langsung operasi di Ambarawa.",
+    "rarity": "umum"
+  },
+  {
+    "question": "3. Taktik pengepungan ganda yang digunakan oleh Kolonel Sudirman untuk menjepit tentara Sekutu di Ambarawa dikenal dengan nama taktik...",
+    "options": [
+      "Perang Gerilya",
+      "Bumi Hangus",
+      "Supit Urang",
+      "Pagar Betis"
+    ],
+    "answer": 2,
+    "explanation": "Jawaban yang benar adalah Supit Urang. Taktik ini adalah strategi pengepungan ganda yang efektif untuk memotong jalur Sekutu.",
+    "rarity": "langka"
+  },
+  {
+    "question": "4. Pasukan Sekutu (Inggris) yang mendarat di Semarang dan kemudian memicu pertempuran di Ambarawa dipimpin oleh...",
+    "options": [
+      "Brigadir Jenderal A.W.S. Mallaby",
+      "Brigadir Jenderal Bethell",
+      "Letnan Jenderal Christison",
+      "Mayor Jenderal Mansergh"
+    ],
+    "answer": 1,
+    "explanation": "Jawaban yang benar adalah Brigadir Jenderal Bethell. Ia adalah komandan pasukan Sekutu yang datang di wilayah Jawa Tengah.",
+    "rarity": "langka"
+  },
+  {
+    "question": "5. Tujuan awal kedatangan pasukan Sekutu ke wilayah Jawa Tengah pada akhir tahun 1945 adalah untuk...",
+    "options": [
+      "Menjajah kembali Indonesia",
+      "Melucuti senjata tentara Jepang dan mengurus tawanan perang",
+      "Membangun pangkalan militer di Ambarawa",
+      "Membantu Belanda merebut Yogyakarta"
+    ],
+    "answer": 1,
+    "explanation": "Jawaban yang benar adalah melucuti senjata tentara Jepang dan mengurus tawanan perang. Tujuan ini berhubungan dengan pasca-kemerdekaan dan proses pendudukan pasukan Sekutu.",
+    "rarity": "super"
+  },
+  {
+    "question": "6. Ketegangan di Ambarawa bermula karena pasukan Sekutu secara sepihak membebaskan dan mempersenjatai...",
+    "options": [
+      "Pasukan Jepang yang tersisa",
+      "Tentara bayaran Gurkha",
+      "Bekas tawanan perang Belanda (NICA)",
+      "Penduduk lokal Ambarawa"
+    ],
+    "answer": 2,
+    "explanation": "Jawaban yang benar adalah bekas tawanan perang Belanda atau NICA. Kebijakan ini memicu konflik karena NICA dianggap kembali berperan di Indonesia.",
+    "rarity": "super"
+  },
+  {
+    "question": "7. Sebelum pertempuran memuncak, sempat diadakan perundingan gencatan senjata pada 2 November 1945 di Magelang antara Brigjen Bethell dan...",
+    "options": [
+      "Ir. Soekarno",
+      "Drs. Mohammad Hatta",
+      "Sutan Sjahrir",
+      "Kolonel Sudirman"
+    ],
+    "answer": 0,
+    "explanation": "Jawaban yang benar adalah Ir. Soekarno. Perundingan tersebut merupakan upaya komunikasi sebelum konflik semakin memanas.",
+    "rarity": "epik"
+  },
+  {
+    "question": "8. Pertempuran Ambarawa berakhir dengan mundurnya pasukan Sekutu ke Semarang pada tanggal...",
+    "options": [
+      "10 November 1945",
+      "15 Desember 1945",
+      "1 Maret 1949",
+      "20 Oktober 1945"
+    ],
+    "answer": 1,
+    "explanation": "Jawaban yang benar adalah 15 Desember 1945. Pada tanggal ini, pasukan Sekutu mundur ke Semarang dan Indonesia menandai kemenangan di Ambarawa.",
+    "rarity": "epik"
+  },
+  {
+    "question": "9. Untuk mengenang keberhasilan pasukan Indonesia dalam Pertempuran Ambarawa, setiap tanggal 15 Desember diperingati oleh TNI AD sebagai...",
+    "options": [
+      "Hari Pahlawan",
+      "Hari Kesaktian Pancasila",
+      "Hari Juang Kartika (Hari Infanteri)",
+      "Hari Kebangkitan Nasional"
+    ],
+    "answer": 2,
+    "explanation": "Jawaban yang benar adalah Hari Juang Kartika atau Hari Infanteri. Tanggal 15 Desember diingat sebagai hari perjuangan infanteri Indonesia.",
+    "rarity": "super"
+  },
+  {
+    "question": "10. Monumen yang didirikan di Kabupaten Semarang untuk mengenang peristiwa bersejarah ini adalah...",
+    "options": [
+      "Monumen Nasional",
+      "Monumen Palagan Ambarawa",
+      "Monumen Yogya Kembali",
+      "Monumen Tugu Muda"
+    ],
+    "answer": 1,
+    "explanation": "Jawaban yang benar adalah Monumen Palagan Ambarawa. Monumen ini dibangun untuk mengenang Pertempuran Ambarawa dan semangat juang rakyat Indonesia.",
+    "rarity": "umum"
+  },
+  {
+    "question": "11. Palagan Ambarawa terjadi setelah Proklamasi Kemerdekaan Indonesia dan merupakan bagian dari perjuangan mempertahankan kemerdekaan.",
+    "options": [
+      "Benar",
+      "Salah"
+    ],
+    "answer": 0,
+    "explanation": "Benar. Palagan Ambarawa terjadi setelah proklamasi dan menjadi salah satu pertempuran penting dalam mempertahankan kemerdekaan Indonesia.",
+    "rarity": "umum"
+  },
+  {
+    "question": "12. Kedatangan pasukan Sekutu ke Ambarawa sejak awal bertujuan untuk menjajah kembali Indonesia.",
+    "options": [
+      "Benar",
+      "Salah"
+    ],
+    "answer": 1,
+    "explanation": "Salah. Kedatangan Sekutu pada awalnya bertujuan untuk melucuti senjata Jepang dan menangani tawanan perang, bukan langsung menjajah kembali Indonesia.",
+    "rarity": "umum"
+  },
+  {
+    "question": "13. Konflik antara pasukan Indonesia dan Sekutu di Ambarawa dipengaruhi oleh keterlibatan NICA yang berusaha mengembalikan kekuasaan Belanda.",
+    "options": [
+      "Benar",
+      "Salah"
+    ],
+    "answer": 0,
+    "explanation": "Benar. NICA berusaha mengembalikan kekuasaan Belanda, sehingga konflik di Ambarawa memanas.",
+    "rarity": "langka"
+  },
+  {
+    "question": "14. Strategi Supit Urang dilakukan dengan mengepung posisi pasukan lawan dari kedua sisi sehingga ruang geraknya semakin terbatas.",
+    "options": [
+      "Benar",
+      "Salah"
+    ],
+    "answer": 0,
+    "explanation": "Benar. Strategi Supit Urang adalah taktik pengepungan ganda dari dua sisi yang menekan lawan.",
+    "rarity": "langka"
+  },
+  {
+    "question": "15. Kemenangan Indonesia dalam Palagan Ambarawa terutama disebabkan oleh keunggulan persenjataan TKR dibandingkan pasukan Sekutu.",
+    "options": [
+      "Benar",
+      "Salah"
+    ],
+    "answer": 1,
+    "explanation": "Salah. Kemenangan bukan semata-mata karena persenjataan, melainkan strategi, semangat juang, dan koordinasi pasukan.",
+    "rarity": "super"
+  },
+  {
+    "question": "16. Jenderal Soedirman mengambil peran penting dalam mengatur strategi pasukan Indonesia setelah menjadi pimpinan dalam pertempuran Ambarawa.",
+    "options": [
+      "Benar",
+      "Salah"
+    ],
+    "answer": 0,
+    "explanation": "Benar. Jenderal Sudirman memiliki peran besar dalam merancang strategi dan memimpin perjuangan di Ambarawa.",
+    "rarity": "super"
+  },
+  {
+    "question": "17. Palagan Ambarawa menunjukkan bahwa perjuangan mempertahankan kemerdekaan hanya bergantung pada tentara, tanpa keterlibatan masyarakat.",
+    "options": [
+      "Benar",
+      "Salah"
+    ],
+    "answer": 1,
+    "explanation": "Salah. Perjuangan ini melibatkan rakyat, pejuang, dan elemen masyarakat serta tentara.",
+    "rarity": "epik"
+  },
+  {
+    "question": "18. Kondisi geografis wilayah Ambarawa turut memengaruhi strategi yang digunakan oleh pasukan Indonesia dalam menghadapi lawan.",
+    "options": [
+      "Benar",
+      "Salah"
+    ],
+    "answer": 0,
+    "explanation": "Benar. Kondisi wilayah dan medan amat memengaruhi taktik dan strategi pasukan Indonesia.",
+    "rarity": "epik"
+  },
+  {
+    "question": "19. Keberhasilan pasukan Indonesia dalam Palagan Ambarawa memiliki dampak terhadap meningkatnya kepercayaan diri bangsa Indonesia dalam mempertahankan kemerdekaan.",
+    "options": [
+      "Benar",
+      "Salah"
+    ],
+    "answer": 0,
+    "explanation": "Benar. Kemenangan di Ambarawa memperkuat semangat dan kepercayaan diri Indonesia dalam mempertahankan kemerdekaan.",
+    "rarity": "super"
+  },
+  {
+    "question": "20. Palagan Ambarawa berakhir dengan kemenangan pasukan Sekutu sehingga Indonesia kehilangan kendali atas wilayah Ambarawa.",
+    "options": [
+      "Benar",
+      "Salah"
+    ],
+    "answer": 1,
+    "explanation": "Salah. Kemenangan ada di pihak Indonesia, dan pasukan Sekutu mundur ke Semarang setelah kekalahan di Ambarawa.",
+    "rarity": "umum"
   }
 ]
