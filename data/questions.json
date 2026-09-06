@@ -1,0 +1,55 @@
+[
+  {
+    "name": "fufu",
+    "kelas": "12c",
+    "score": 680,
+    "catches": 6,
+    "baitLeft": 8,
+    "target": 500,
+    "questions": [
+      {
+        "question": "Benua terbesar di dunia adalah?",
+        "selected": "Asia",
+        "correct": "Asia",
+        "explanation": "Asia adalah benua terluas di dunia.",
+        "result": "benar"
+      },
+      {
+        "question": "Benda yang dapat menyerap panas matahari paling besar adalah?",
+        "selected": "Air",
+        "correct": "Air",
+        "explanation": "Air memiliki kapasitas panas yang tinggi, jadi ia menyerap dan menyimpan panas dengan baik.",
+        "result": "benar"
+      },
+      {
+        "question": "Benda yang dapat menyerap panas matahari paling besar adalah?",
+        "selected": "Air",
+        "correct": "Air",
+        "explanation": "Air memiliki kapasitas panas yang tinggi, jadi ia menyerap dan menyimpan panas dengan baik.",
+        "result": "benar"
+      },
+      {
+        "question": "Satuan luas yang benar dalam SI adalah?",
+        "selected": "Meter persegi",
+        "correct": "Meter persegi",
+        "explanation": "Satuan luas dalam SI adalah meter persegi (m²).",
+        "result": "benar"
+      },
+      {
+        "question": "Benda yang dapat menyerap panas matahari paling besar adalah?",
+        "selected": "Air",
+        "correct": "Air",
+        "explanation": "Air memiliki kapasitas panas yang tinggi, jadi ia menyerap dan menyimpan panas dengan baik.",
+        "result": "benar"
+      },
+      {
+        "question": "Benua terbesar di dunia adalah?",
+        "selected": "Asia",
+        "correct": "Asia",
+        "explanation": "Asia adalah benua terluas di dunia.",
+        "result": "benar"
+      }
+    ],
+    "createdAt": "2026-09-04T04:07:29.851Z"
+  }
+]
