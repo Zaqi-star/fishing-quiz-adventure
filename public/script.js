@@ -279,14 +279,27 @@ function escapeHtml(value) {
 
 function renderLeaderboard(entries) {
   if (!entries || !entries.length) {
-    leaderboardBox.innerHTML = '<h3>Leaderboard</h3><p>Belum ada data.</p>';
+    leaderboardBox.innerHTML = '<div class="leaderboard-title"><span class="leaderboard-trophy">🏆</span><h3>PAPAN LEADERBOARD</h3></div><p>Belum ada data.</p>';
     return;
   }
 
   leaderboardBox.innerHTML = `
-    <h3>Leaderboard Pemenang</h3>
-    <ul>
-      ${entries.map((entry, index) => `<li><strong>${index + 1}.</strong> ${escapeHtml(entry.name || 'Anonim')} (${escapeHtml(entry.kelas || '-')}) - ${Number(entry.score || 0)} poin</li>`).join('')}
+    <div class="leaderboard-title">
+      <span class="leaderboard-trophy">🏆</span>
+      <h3>PAPAN LEADERBOARD</h3>
+      <span class="leaderboard-trophy">🏆</span>
+    </div>
+    <p class="leaderboard-subtitle">Pemain dengan skor tertinggi</p>
+    <ul class="leaderboard-list">
+      ${entries.map((entry, index) => `
+        <li class="leaderboard-row rank-${Math.min(index + 1, 4)}">
+          <span class="leaderboard-rank">${index < 3 ? ['🥇', '🥈', '🥉'][index] : `${index + 1}.`}</span>
+          <span class="leaderboard-player">
+            <strong>${escapeHtml(entry.name || 'Anonim')}</strong>
+            <small>${escapeHtml(entry.kelas || '-')}</small>
+          </span>
+          <strong class="leaderboard-score">${Number(entry.score || 0)} poin</strong>
+        </li>`).join('')}
     </ul>
   `;
 }
