@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: fishing-quiz-adventure
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000
+      - key: ADMIN_PASSWORD
+        value: Kelompok123
