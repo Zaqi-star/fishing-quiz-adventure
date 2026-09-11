@@ -518,6 +518,7 @@ function openQuestion(fish) {
 }
 
 function answerQuestion(fish, selectedIndex) {
+  if (!questionIsOpen) return;
   if (!fish || !Number.isInteger(selectedIndex) || selectedIndex < 0 || selectedIndex >= (fish.question?.options?.length || 0)) {
     updateStatus('Pilihan jawaban tidak valid. Silakan pilih ulang.');
     questionModal.classList.add('hidden');
@@ -556,6 +557,10 @@ function answerQuestion(fish, selectedIndex) {
 
 function castAnchor() {
   if (!currentPlayer.isPlaying || currentPlayer.hasEnded) return;
+  if (questionIsOpen) {
+    updateStatus('Jawab soal yang sedang tampil terlebih dahulu.');
+    return;
+  }
   if (currentPlayer.baitLeft <= 0) {
     endGame();
     return;
