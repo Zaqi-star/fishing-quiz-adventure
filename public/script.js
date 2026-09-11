@@ -466,15 +466,17 @@ function renderGameLoop(timestamp) {
         anchor.x += (anchor.targetX - anchor.x) * 0.22;
         anchor.y += (anchor.targetY - anchor.y) * 0.22;
 
-        if (Math.hypot(boat.x - targetFish.x, (boat.y + 20) - targetFish.y) < 28) {
-          openQuestion(targetFish);
+          if (!questionIsOpen && Math.hypot(boat.x - targetFish.x, (boat.y + 20) - targetFish.y) < 28) {
+            anchor.active = false;
+            anchor.targetFishId = null;
+            anchor.reached = true;
+            openQuestion(targetFish);
+          }
+        } else {
           anchor.active = false;
           anchor.targetFishId = null;
-          anchor.reached = true;
-          questionIsOpen = true;
         }
       }
-    }
 
     fishList = fishList.filter((fish) => fish.x > -60);
     fishList.forEach((fish) => {
@@ -494,7 +496,10 @@ function renderGameLoop(timestamp) {
 }
 
 function openQuestion(fish) {
-  if (!fish || questionIsOpen) return;
+  if (!fish || questionIsOpen || !fish.question || !questionText || !answerOptions || !questionModal || !Array.isArray(fish.question.options) || fish.question.options.length < 2) {
+    updateStatus('Soal ikan tidak tersedia. Silakan lempar umpan lagi.');
+    return false;
+  }
 
   questionText.textContent = fish.question.question;
   answerOptions.innerHTML = '';
@@ -509,6 +514,7 @@ function openQuestion(fish) {
 
   questionModal.classList.remove('hidden');
   questionIsOpen = true;
+  return true;
 }
 
 function answerQuestion(fish, selectedIndex) {
