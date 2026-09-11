@@ -111,7 +111,7 @@ const defaultQuestions = [
     rarity: 'super'
   },
   {
-    question: '10. Monumen yang didirikan di Kabupaten Semarang untuk mengenang peristiwa bersejarah ini adalah...',
+    question: '10. Monum3en yang didirikan di Kabupaten Semarang untuk mengenang peristiwa bersejarah ini adalah...',
     options: ['Monumen Nasional', 'Monumen Palagan Ambarawa', 'Monumen Yogya Kembali', 'Monumen Tugu Muda'],
     answer: 1,
     explanation: 'Jawaban yang benar adalah Monumen Palagan Ambarawa. Monumen ini dibangun untuk mengenang Pertempuran Ambarawa dan semangat juang rakyat Indonesia.',
@@ -195,11 +195,11 @@ let currentPlayer = {
   name: '',
   kelas: '',
   score: 0,
-  baitLeft: 15,
+  baitLeft: 20,
   target: 500,
   fishCaught: 0,
   review: [],
-  timeLeft: 60,
+  timeLeft: 180,
   usedQuestions: [],
   isPlaying: false,
   hasEnded: false,
@@ -261,7 +261,7 @@ function updateHud() {
   hudScore.textContent = currentPlayer.score;
   hudBait.textContent = currentPlayer.baitLeft;
   hudTarget.textContent = currentPlayer.target;
-  hudTime.textContent = formatTime(currentPlayer.timeLeft ?? 60);
+  hudTime.textContent = formatTime(currentPlayer.timeLeft ?? 180);
   fishCaughtCount.textContent = currentPlayer.fishCaught;
   const percent = Math.min(100, Math.round((currentPlayer.score / currentPlayer.target) * 100));
   progressText.textContent = `${percent}%`;
@@ -667,11 +667,11 @@ function startGame() {
     name,
     kelas,
     score: 0,
-    baitLeft: 15,
+    baitLeft: 20,
     target: 500,
     fishCaught: 0,
     review: [],
-    timeLeft: 60,
+    timeLeft: 180,
     usedQuestions: [],
     isPlaying: true,
     hasEnded: false,
