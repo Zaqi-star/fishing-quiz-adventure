@@ -196,7 +196,7 @@ let currentPlayer = {
   kelas: '',
   score: 0,
   baitLeft: 20,
-  target: 500,
+  target: null,
   fishCaught: 0,
   review: [],
   timeLeft: 180,
@@ -260,11 +260,12 @@ function updateHud() {
   hudClass.textContent = currentPlayer.kelas || '-';
   hudScore.textContent = currentPlayer.score;
   hudBait.textContent = currentPlayer.baitLeft;
-  hudTarget.textContent = currentPlayer.target;
-  hudTime.textContent = formatTime(currentPlayer.timeLeft ?? 180);
+  hudTarget.textContent = 'Tanpa batas';
+  if (hudTime) {
+    hudTime.textContent = formatTime(currentPlayer.timeLeft ?? 180);
+  }
   fishCaughtCount.textContent = currentPlayer.fishCaught;
-  const percent = Math.min(100, Math.round((currentPlayer.score / currentPlayer.target) * 100));
-  progressText.textContent = `${percent}%`;
+  progressText.textContent = 'Tanpa batas';
 }
 
 function escapeHtml(value) {
@@ -545,7 +546,6 @@ function answerQuestion(fish, selectedIndex) {
   }
 
   updateHud();
-  if (currentPlayer.score >= currentPlayer.target) endGame();
 }
 
 function castAnchor() {
@@ -598,7 +598,7 @@ function castAnchor() {
     }, 220);
   }
 
-  if (currentPlayer.baitLeft <= 0 && currentPlayer.score < currentPlayer.target) {
+  if (currentPlayer.baitLeft <= 0) {
     setTimeout(() => endGame(), 500);
   }
 }
@@ -631,7 +631,9 @@ function endGame() {
     })
     .catch(() => renderLeaderboard([]));
 
-  const status = entry.score >= entry.target ? 'Target berhasil tercapai!' : currentPlayer.timeLeft <= 0 ? 'Waktu habis! Skor akhir ditampilkan di papan skor.' : 'Permainan selesai, target belum tercapai.';
+  const status = currentPlayer.timeLeft <= 0
+    ? 'Waktu habis! Skor tertinggi menentukan pemenang.'
+    : 'Umpan habis! Skor akhir ditampilkan di papan skor.';
   resultSummary.innerHTML = `
     <p><strong>Nama:</strong> ${escapeHtml(entry.name)}</p>
     <p><strong>Kelas:</strong> ${escapeHtml(entry.kelas)}</p>
@@ -668,7 +670,7 @@ function startGame() {
     kelas,
     score: 0,
     baitLeft: 20,
-    target: 500,
+    target: null,
     fishCaught: 0,
     review: [],
     timeLeft: 180,
